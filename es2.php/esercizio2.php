@@ -14,12 +14,13 @@
         $tasso=5; //percentuale    
 
         //formula per calcolare il tasso di interesse in base ai valori impostati alle variabili
-        $tasso_interesse=($tasso*$numgiorni*$capitale)/36500; 
+        $tasso_interesse=number_format(($tasso*$numgiorni*$capitale)/36500, 2); //solo due cifre decimali
+        
 
         echo "<p>tasso: $tasso</p>";
         echo "<p>capitale: $capitale</p>";
         echo "<p>numero di giorni: $numgiorni</p>";
-        echo "<h2 style='color:green'>tasso di interesse calcolato: $tasso_interesse</h2>";
+        echo "<h2 style='color:green'>tasso di interesse calcolato: $tasso_interesse €</h2>";
 
     ?>
     
